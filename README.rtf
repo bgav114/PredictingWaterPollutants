@@ -1,26 +1,9 @@
 
 
-Turbidity is the measure of suspended particles in water. Unnaturally high turbidity in rivers is a major aquatic ecosystem 
-and human health concern, which makes it an important and commonly monitored water-quality variable in river management programs. 
-Sensors submerged in water measure turbidity in NTU\'92s. However such sensors often produce faulty data ridden with anomalies, 
-and are costly to set up and maintain - thus, hindering water quality management efforts. 
+Turbidity is the measure of suspended particles in water. Unnaturally high turbidity in rivers is a major aquatic ecosystem and human health concern, which makes it an important and commonly monitored water-quality variable in river management programs. Sensors submerged in water measure turbidity in NTU\'92s. However such sensors often produce faulty data ridden with anomalies, and are costly to set up and maintain - thus, hindering water quality management efforts. 
 
-A possible alternative is mathematical modelling, which can aid professionals in distinguishing between faulty data and valid data 
-produced in each time period. Given turbidity\'92s covariate relationship with rainfall, water level, light and temperature, 
-fluctuations in turbidity in a given time period often coincide with these measures. Furthermore such data is publicly accessible, 
-making the approach cost-effective. Short-term predictions of turbidity, found by modelling fluctuations in covariate measures, 
-could aid on-site professionals in evaluating sensor produced measures. If the value produced by sensors varies widely from 
-predictions produced by the model, the former may be deemed faulty. On-site professionals can also use the predicted value for 
-more accurate decision making in such instances. 
+A possible alternative is mathematical modelling, which can aid professionals in distinguishing between faulty data and valid data produced in each time period. Given turbidity\'92s covariate relationship with rainfall, water level, light and temperature, fluctuations in turbidity in a given time period often coincide with these measures. Furthermore such data is publicly accessible, making the approach cost-effective. Short-term predictions of turbidity, found by modelling fluctuations in covariate measures, could aid on-site professionals in evaluating sensor produced measures. If the value produced by sensors varies widely from predictions produced by the model, the former may be deemed faulty. On-site professionals can also use the predicted value for more accurate decision making in such instances. 
 
-Our approach, involved using rainfall, water level, solar global exposure and maximum air temperature in a given time period to 
-forecast turbidity within the same period. To do so, dynamic regression (ARIMA errors) models, generalized additive models, and 
-long-short term memory models were used. Each model\'92s performance was evaluated over 156 folds in a cross validation procedure. 
-Over 156 folds, each model proved to have high accuracy. Although all models performed very well, the dynamic regression model seemed 
-to outperform the other models (on average). In some time periods, however, GAM\'92s and LSTM\'92s yielded higher accuracy. To be 
-able to optimise our predictions, a meta-model was created to select the best model of the three in any given time period. The meta-model 
-approach takes into account the testing set\'92s time series features, and selects the most suitable model for a given periods prediction. 
-Thus ensuring the most accurate model is used for the predictions in every time period.
+Our approach, involved using rainfall, water level, solar global exposure and maximum air temperature in a given time period to forecast turbidity within the same period. To do so, dynamic regression (ARIMA errors) models, generalized additive models, and long-short term memory models were used. Each model\'92s performance was evaluated over 156 folds in a cross validation procedure. Over 156 folds, each model proved to have high accuracy. Although all models performed very well, the dynamic regression model seemed to outperform the other models (on average). In some time periods, however, GAM\'92s and LSTM\'92s yielded higher accuracy. To be able to optimise our predictions, a meta-model was created to select the best model of the three in any given time period. The meta-model approach takes into account the testing set\'92s time series features, and selects the most suitable model for a given periods prediction. Thus ensuring the most accurate model is used for the predictions in every time period.
 
-Given the novelty of our results, we aim to publish our work within the Hydrological Processes journal under the 
-Wiley institute (currently awaiting an outcome).}
+Given the novelty of our results, we aim to publish our work within the Hydrological Processes journal under the Wiley institute (currently awaiting an outcome).}
